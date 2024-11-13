@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Brian's projects</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+	<script src="assets/js/index.js" defer></script>
+
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="icon" href="assets/images/favicon-1024x1024px.png">	
+</head>
+
+<body class="container-fluid bg-primary text-light">
+	<header class="">
+		<nav class="navbar navbar-expand-md rounded-pill bg-secondary primary-border mt-3 shadow-lg">
+			<section class="rounded-pill bg-info mx-md-0 mx-2 ms-auto">
+				<button class="btn rounded-pill nav-link navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"">
+					<i class="text-light text-center bi bi-list fs-1"></i>
+				</button>
+			</section>
+
+			<ul class="navbar-nav collapse navbar-collapse me-auto mb-0" id="navbarSupportedContent"">
+				<li class="info-border nav-item rounded-pill bg-info mx-2">
+					<a class="nav-link text-light text-center me-2" href="index.html">
+						<i class="bi-hdd-rack p-1 px-2"></i>
+						Home
+					</a>
+				</li>
+				<li class="pink-border active nav-item rounded-pill bg-info mx-2 ms-auto">
+					<a class="nav-link text-light text-center me-2" href="projects.html">
+						<i class="bi bi-briefcase-fill mx-2"></i>
+						Projects
+					</a>
+				</li>
+				<li class="info-border nav-item rounded-pill bg-info mx-2">
+					<a class="nav-link text-light text-center me-2" href="contact.html">
+						<i class="bi bi-person-lines-fill mx-2"></i>
+						Contact
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="container">
+		<section class="text-center">
+			<article>Here are some of my personal projects that I've been working on. These are mostly worked on during any free time I have.</article>
+		</section>
+
+		<section id="projects" class="carousel slide container-fluid bg-secondary primary-border rounded-5 m-4 p-4">
+			<section class="carousel-indicators">
+				<button type="button" data-bs-target="#projects" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#projects" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#projects" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				<button type="button" data-bs-target="#projects" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				<button type="button" data-bs-target="#projects" data-bs-slide-to="4" aria-label="Slide 5"></button>
+				<button type="button" data-bs-target="#projects" data-bs-slide-to="5" aria-label="Slide 6"></button>
+			</section>
+
+			<ul class="carousel-inner m-4">
+					<li class="active carousel-item card rounded-5 bg-secondary" aria-label="Slide 1">
+						<img src="assets/images/project-shrimp-bot.png" class="card-img-wrapper img-fluid rounded-top-5 z-1 position-relative" alt="shrimp example">
+						<section class="card-body text-center rounded-5 bg-primary info-border card-position z-1 position-relative card-description-wrapper">
+							<h4 class="card-position p-2 mx-5 text-center rounded-pill bg-info">
+								Shrimp the Discord bot
+							</h4>
+							<p class="card-text">
+								This is my very first programming project that I started around the end of 2018. Since then I've moved from Javascript to Typescript and had multiple versions with each one improving on the previous one.
+							</p>
+
+							<a href="discord-bot.html" class="mx-2 text-decoration-none">
+								<button class="btn btn-primary rounded-pill bi bi-file-code" type="button">
+									Details
+								</button>
+							</a>
+
+							<a href="https://github.com/Applejuicelolmc/shrimp-bot" class="mx-2 text-decoration-none">
+								<button class="btn btn-primary bi bi-github rounded-pill" type="button">
+									Github
+								</button>
+							</a>
+
+							<a href="https://hub.docker.com/r/applejuicelolmc/shrimp-bot" class="mx-2 text-decoration-none">
+								<button class="btn btn-primary bi bi-lightning-charge-fill rounded-pill" type="button">
+									Dockerhub
+								</button>
+							</a>
+
+							<span class="card-badges text-center">
+								<a href="https://nodejs.org/en" class="mx-1 text-decoration-none">
+									<button class="badge rounded-pill" type="button">
+										Node JS
+									</button>
+								</a>
+								<a href="https://www.typescriptlang.org/" class="mx-1 text-decoration-none">
+									<button class="badge rounded-pill" type="button">
+										Typescript
+									</button>
+								</a>
+								<a href="https://www.docker.com/" class="mx-1 text-decoration-none">
+									<button class="badge rounded-pill" type="button">
+										Docker
+									</button>
+								</a>
+								<a href="https://discord.js.org/" class="mx-1 text-decoration-none">
+									<button class="badge rounded-pill" type="button">
+										Discord.js
+									</button>
+								</a>
+							</span>
+						</section>
+					</li>
+
+					<li class="carousel-item card rounded-5 bg-secondary" aria-label="Slide 2">
+						<img src="assets/images/project-homelab.jpg" class="card-img-wrapper img-fluid rounded-top-5 z-1 position-relative" alt="shrimp example">
+						<section class="card-body text-center rounded-5 bg-primary info-border card-position z-1 position-relative card-description-wrapper">
+							<h4 class="card-position p-2 mx-5 text-center rounded-pill bg-info">
+								Juicelab
+							</h4>
+							<p class="card-text">
+								This is a homelab that I've started building around 2020. It's a collection of second hand computers that now I use as servers to learn about networking, virtualization and other IT related topics.
+							</p>
+
+							<a href="homelab.html" class="mx-2 text-decoration-none">
+								<button class="btn btn-primary rounded-pill bi bi-file-code" type="button">
+									Details
+								</button>
+							</a>
+							<span class="card-badges text-center">
+								<a href="https://www.proxmox.com/en/" class="mx-1 text-decoration-none">
+									<button class="badge rounded-pill" type="button">
+										Proxmox
+									</button>
+								</a>
+								<a href="https://www.docker.com/" class="mx-1 text-decoration-none">
+									<button class="badge rounded-pill" type="button">
+										Docker
+									</button>
+								</a>
+							</span>
+						</section>
+					</li>
+
+					<li class="carousel-item card rounded-5 bg-secondary" aria-label="Slide 3">
+						<img src="assets/images/project-image.jpg" class="card-img-wrapper img-fluid rounded-top-5 z-1 position-relative" alt="shrimp example">
+						<section class="card-body text-center rounded-5 bg-primary info-border card-position z-1 position-relative card-description-wrapper">
+							<h4 class="card-position p-2 mx-5 text-center rounded-pill bg-info">
+								placeholder 3
+							</h4>
+							<p class="card-text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vero earum a aliquam, tempora facilis repudiandae soluta ad illo nemo mollitia optio fugit enim eos iusto, quisquam fuga est! Voluptas.
+							</p>
+
+							<a href="project-example.html" class="mx-2 text-decoration-none">
+								<button class="btn btn-primary rounded-pill bi bi-file-code" type="button">
+									Details
+								</button>
+							</a>
+						</section>
+					</li>
+
+					<li class="carousel-item card rounded-5 bg-secondary" aria-label="Slide 4">
+						<img src="assets/images/project-image.jpg" class="card-img-wrapper img-fluid rounded-top-5 z-1 position-relative" alt="shrimp example">
+						<section class="card-body text-center rounded-5 bg-primary info-border card-position z-1 position-relative card-description-wrapper">
+							<h4 class="card-position p-2 mx-5 text-center rounded-pill bg-info">
+								placeholder 4
+							</h4>
+							<p class="card-text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vero earum a aliquam, tempora facilis repudiandae soluta ad illo nemo mollitia optio fugit enim eos iusto, quisquam fuga est! Voluptas.
+							</p>
+
+							<a href="project-example.html" class="mx-2 text-decoration-none">
+								<button class="btn btn-primary rounded-pill bi bi-file-code" type="button">
+									Details
+								</button>
+							</a>
+						</section>
+					</li>
+
+					<li class="carousel-item card rounded-5 bg-secondary" aria-label="Slide 5">
+						<img src="assets/images/project-image.jpg" class="card-img-wrapper img-fluid rounded-top-5 z-1 position-relative" alt="shrimp example">
+						<section class="card-body text-center rounded-5 bg-primary info-border card-position z-1 position-relative card-description-wrapper">
+							<h4 class="card-position p-2 mx-5 text-center rounded-pill bg-info">
+								placeholder 5
+							</h4>
+							<p class="card-text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vero earum a aliquam, tempora facilis repudiandae soluta ad illo nemo mollitia optio fugit enim eos iusto, quisquam fuga est! Voluptas.
+							</p>
+
+							<a href="project-example.html" class="mx-2 text-decoration-none">
+								<button class="btn btn-primary rounded-pill bi bi-file-code" type="button">
+									Details
+								</button>
+							</a>
+						</section>
+					</li>
+					
+					<li class="carousel-item card rounded-5 bg-secondary" aria-label="Slide 6">
+						<img src="assets/images/project-image.jpg" class="card-img-wrapper img-fluid rounded-top-5 z-1 position-relative" alt="shrimp example">
+						<section class="card-body text-center rounded-5 bg-primary info-border card-position z-1 position-relative card-description-wrapper">
+							<h4 class="card-position p-2 mx-5 text-center rounded-pill bg-info">
+								placeholder 6
+							</h4>
+							<p class="card-text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vero earum a aliquam, tempora facilis repudiandae soluta ad illo nemo mollitia optio fugit enim eos iusto, quisquam fuga est! Voluptas.
+							</p>
+
+							<a href="project-example.html" class="mx-2 text-decoration-none">
+								<button class="btn btn-primary rounded-pill bi bi-file-code" type="button">
+									Details
+								</button>
+							</a>
+						</section>
+					</li>
+				</ul>
+
+			<button class="carousel-control-prev" type="button" data-bs-target="#projects" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#projects" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</section>
+	</main>
+
+	<footer class="footer container-fluid text-center rounded-pill info-border bg-secondary shadow-lg my-4 py-2">
+		Made by Brian de Kort
+	</footer>
+</body>
+
+</html>
