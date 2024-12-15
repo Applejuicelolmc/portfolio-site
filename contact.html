@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="nl-BE" data-bs-theme="dark">
 
 <head>
 	<meta charset="UTF-8">
@@ -7,18 +7,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Brian's contact info</title>
 
+	<!-- Reset style -->
+	<link rel="stylesheet" href="./css/reset.css">
+
+	<!-- Bootstrap -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
 
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="icon" href="assets/images/favicon-1024x1024px.png">	
+	<!-- Leaflet map -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+	
+	<!-- Custom css -->
+	<link rel="stylesheet" href="./css/map.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="icon" href="./assets/images/favicon.gif">
+
+	<!-- Custom Javascript -->
+	<script src="./js/script.js" defer></script>
+	<script src="./js/map.js" defer></script>
 </head>
 
 <body class="container-fluid bg-primary text-light">
-	<header class="">
+	<header>
 		<nav class="navbar navbar-expand-md rounded-pill bg-secondary primary-border mt-3 shadow-lg">
 			<section class="rounded-pill bg-info mx-md-0 mx-2 ms-auto">
 				<button class="btn rounded-pill nav-link navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"">
@@ -51,15 +63,16 @@
 
 	<main class="container-fluid">
 		<section class="row">
-			<article class="bg-secondary col-6 offset-3 rounded-5 my-4 px-4 py-2">
+			<article class="col-6 offset-1 bg-secondary primary-border rounded-5 my-4 px-4 py-2">
 				<h1>Contact me</h1>
+				<hr>
 
 				<p class="small py-2">
-					I'm open to job offers and internships, so feel free to contact me via phone or e-mail if interested.
+					Ik sta open tot jobaanbiedingen en stages, dus voel je vrij om me te contacteren via telefoon of e-mail indien geïnteresseerd. Ik negeer rekruteringsbedrijven.
 				</p>
 
-				<button class="badge rounded-pill">
-					<i class="bi bi-telephone fs-6">  +32 496 08 43 84</i>
+				<button class="badge text-bg-dark rounded-pill">
+					<i class="bi bi-telephone fs-6">	+32 496 08 43 84</i>
 				</button>
 
 				<a class="text-decoration-none" href="mailto:dekortbrian1@gmail.com" target="_blank">
@@ -68,7 +81,7 @@
 					</button>
 				</a>
 
-				<ul class="list-inline mt-5">
+				<ul class="list-inline my-5">
 					<h1>Visit my socials</h1>
 					<li class="list-inline-item">
 						<a class="text-decoration-none" href="https://github.com/Applejuicelolmc" target="_blank">
@@ -93,19 +106,89 @@
 					</li>
 				</ul>
 
-				<p class="small mt-4 pink-border rounded-4 px-3 py-2">
-					Before contacting me by phone or whatsapp be sure to send a message with a reason for contact, otherwise you will be ignored and blocked.
-				</p>
+				<p class="small mt-4 pink-border rounded-4 px-3 py-2 mt-5">
+					Laat me aub weten waarom je me contacteerd via telefoon of whatsapp, anders ga ik er vanuit dat dit spam is en word je genegeerd en geblokkeerd.
 			</article>
+
+			<!-- map breaks when not using row here? -->
+			
 		</section>
 	</main>
 
 	<aside>
+		<section class="row col-10 offset-1 bg-secondary p-4 rounded-5 mb-4">
+			<section id="map">
+				<span id="homeMap" class="row rounded-4 bg-secondary info-border p-4"></span>
+			</section>
 
+			<article id="map" class="rounded-5 px-4 py-4 my-4 ms-3">
+				
+			</article>
+			<h2>Contactformulier</h2>
+			<hr>
+
+			<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="">
+				<section class="form-group">
+					<label for="name">Naam:</label>
+					<input type="text" class="form-control" id="name" name="name" required>
+				</section>
+				<section class="form-group">
+					<label for="email">E-mail:</label>
+					<input type="email" class="form-control" id="email" name="email" required>
+				</section>
+				<section class="form-group">
+					<label for="subject">Onderwerp:</label>
+					<input type="text" class="form-control" id="subject" name="subject" required>
+				</section>
+				<section class="form-group">
+					<label for="message">Laat een bericht achter:</label>
+					<textarea class="form-control" rows="10" id="message" name="message" required></textarea>
+				</section>
+				<section class="form-group my-4">
+					<span data-netlify-recaptcha="true"></span>
+				</section>
+				<button type="submit" class="btn btn-primary rounded-pill">Verzenden</button>
+			</form>
+
+			<form class="bg-secondary" action="#" method="post">
+				<fieldset class="row g-3 mb-3">
+					<legend class="text-uppercase fs-6 fw-bolder pt-3">gegevens</legend>
+					<section class="col-xl-6">
+						<label for="surname" class="form-label">voornaam <span>*</span></label>
+						<input type="text" class=" form-control" aria-label="voornaam" aria-describedby="addon-wrapping">
+					</section>
+
+					<section class="col-xl-6">
+						<label for="name" class="form-label">achternaam <span>*</span></label>
+						<input type="text" class="form-control" aria-label="achternaam" aria-describedby="addon-wrapping">
+					</section>
+
+					<section class="col-6">
+						<label for="gsm-nummer" class="form-label">gsm-nummer</label>
+						<input type="tel" class="form-control" placeholder="0412 34 56 78" aria-label="gsm-nummer" aria-describedby="addon-wrapping">
+					</section>
+
+					<section class="col-6">
+						<label for="e-mail" class="form-label">e-mail</label>
+						<input type="mail" class="form-control" placeholder="0412 34 56 78" aria-label="e-mail" aria-describedby="addon-wrapping">
+					</section>
+				</fieldset>
+				<hr>
+				<h2>Laat een bericht achter</h2>
+				<fieldset class="input-group mb-4">
+					<!-- <span class="input-group-text"></span> -->
+					<textarea class="form-control" aria-label="With textarea"></textarea>
+				</fieldset>
+				
+
+				<button type="submit" class="btn btn-primary rounded-5">verzenden</button>
+			</form>
+		</section>
 	</aside>
 
-	<footer class="footer container-fluid text-center rounded-pill primary-border bg-secondary shadow-lg py-2">
-		Made by Brian de Kort
+	<footer class="footer container-fluid text-center rounded-pill secondary-border bg-secondary shadow-lg py-2">&copy;
+		<span id="year"></span>
+		- Brian de Kort
 	</footer>
 </body>
 

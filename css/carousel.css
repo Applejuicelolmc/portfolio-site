@@ -1,0 +1,34 @@
+@media (min-width: 768px) {
+	.carousel-inner {
+		display: flex;
+	}
+
+	.carousel-item {
+		margin-right: 0;
+		flex: 0 0 33.333333%;
+		display: block;
+	}
+}
+
+@media (max-width: 767px) {
+	.card .img-wrapper {
+		height: 17em;
+	}
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	background-color: #e1e1e1;
+	width: 4vh;
+	height: 4vh;
+	border-radius: 50%;
+	margin-left: -2.5em;
+	margin-right: -2.5em;
+	top: 50%;
+	transform: translateY(-50%);
+	opacity: 1;
+}
+
+.carousel-inner {
+	padding: 1em;
+}

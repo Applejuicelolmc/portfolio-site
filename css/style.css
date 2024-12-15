@@ -12,41 +12,6 @@
 }
 
 /* custom css */
-@media (min-width: 768px) {
-	.carousel-inner {
-		display: flex;
-	}
-
-	.carousel-item {
-		margin-right: 0;
-		flex: 0 0 33.333333%;
-		display: block;
-	}
-}
-
-@media (max-width: 767px) {
-	.card .img-wrapper {
-		height: 17em;
-	}
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-	background-color: #e1e1e1;
-	width: 4vh;
-	height: 4vh;
-	border-radius: 50%;
-	margin-left: -5em;
-	margin-right: -5em;
-	top: 50%;
-	transform: translateY(-50%);
-	opacity: 1;
-}
-
-.carousel-inner {
-	padding: 1em;
-}
-
 .card {
 	margin: 0 .5em;
 	box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
@@ -59,7 +24,6 @@
 
 .card-img-wrapper {
 	max-width: 100%;
-	height: 23vh;
 }
 
 .card .img-wrapper {
@@ -72,12 +36,12 @@
 
 .card-description-wrapper {
 	max-width: 100%;
-	height: 25vh;
+	height: 45vh;
 }
 
 .pink-border {
-	border: 2px;
-	border-color: rgb(187, 96, 197);
+	border: 4px;
+	border-color: #bb60c5;
 	border-style: solid;
 }
 
@@ -94,20 +58,28 @@
 }
 
 .background-01 {
-	background-image: url("../images/background-image-01.jpg");
-
+	background-image: url("../assets/images/background-image-wires.jpg");
 	background-size: cover;
 }
 
-.pill-position {
-	margin-top: -3rem;
+.pill-offset {
+	margin-top: -2.5rem;
 }
 
-.card-position {
+.card-offset {
 	margin-top: -2.5rem;
 }
 
 /* Change position of badges */
 .card-badges {
 	margin-top: 0rem;
+}
+
+a:link a:visited a:hover a:active {
+	color: #bb60c5;
+
+}
+
+.theme-pink {
+	color: #bb60c5;
 }
