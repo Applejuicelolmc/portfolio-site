@@ -62,69 +62,8 @@
 	</header>
 
 	<main class="container-fluid">
-		<section class="row">
-			<article class="col-6 offset-1 bg-secondary primary-border rounded-5 my-4 px-4 py-2">
-				<h1>Contact me</h1>
-				<hr>
-
-				<p class="small py-2">
-					Ik sta open tot jobaanbiedingen en stages, dus voel je vrij om me te contacteren via telefoon of e-mail indien geïnteresseerd. Ik negeer rekruteringsbedrijven.
-				</p>
-
-				<button class="badge text-bg-dark rounded-pill">
-					<i class="bi bi-telephone fs-6">	+32 496 08 43 84</i>
-				</button>
-
-				<a class="text-decoration-none" href="mailto:dekortbrian1@gmail.com" target="_blank">
-					<button class="badge rounded-pill" type="button">
-						<i class="bi bi-envelope fs-6"> dekortbrian1@gmail.com</i>
-					</button>
-				</a>
-
-				<ul class="list-inline my-5">
-					<h1>Visit my socials</h1>
-					<li class="list-inline-item">
-						<a class="text-decoration-none" href="https://github.com/Applejuicelolmc" target="_blank">
-							<button class="badge rounded-pill" type="button">
-								<i class="bi bi-github fs-6"> Github</i>
-							</button>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a class="text-decoration-none" href="https://www.linkedin.com/in/brian-de-kort-23992817a/" target="_blank">
-							<button class="badge rounded-pill" type="button">
-								<i class="bi bi-linkedin fs-6"> Linkedin</i>
-							</button>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=32496084384" target="_blank">
-							<button class="badge rounded-pill" type="button">
-								<i class="bi bi-whatsapp fs-6"> Whatsapp</i>
-							</button>
-						</a>
-					</li>
-				</ul>
-
-				<p class="small mt-4 pink-border rounded-4 px-3 py-2 mt-5">
-					Laat me aub weten waarom je me contacteerd via telefoon of whatsapp, anders ga ik er vanuit dat dit spam is en word je genegeerd en geblokkeerd.
-			</article>
-
-			<!-- map breaks when not using row here? -->
-			
-		</section>
-	</main>
-
-	<aside>
-		<section class="row col-10 offset-1 bg-secondary p-4 rounded-5 mb-4">
-			<section id="map">
-				<span id="homeMap" class="row rounded-4 bg-secondary info-border p-4"></span>
-			</section>
-
-			<article id="map" class="rounded-5 px-4 py-4 my-4 ms-3">
-				
-			</article>
-			<h2>Contactformulier</h2>
+		<section class="row col-10 offset-1 bg-secondary p-4 rounded-5 my-4">
+			<h1>Contactformulier</h1>
 			<hr>
 
 			<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="">
@@ -144,45 +83,66 @@
 					<label for="message">Laat een bericht achter:</label>
 					<textarea class="form-control" rows="10" id="message" name="message" required></textarea>
 				</section>
-				<section class="form-group my-4">
+				<section class="form-group mb-2">
 					<span data-netlify-recaptcha="true"></span>
 				</section>
-				<button type="submit" class="btn btn-primary rounded-pill">Verzenden</button>
+				<button type="submit" class="btn btn-primary rounded-pill mb-4">Verzenden</button>
 			</form>
+			<hr>
+			<section id="map">
+				<span id="homeMap" class="row rounded-4 bg-secondary info-border p-4"></span>
+			</section>
+		</section>
+	</main>
 
-			<form class="bg-secondary" action="#" method="post">
-				<fieldset class="row g-3 mb-3">
-					<legend class="text-uppercase fs-6 fw-bolder pt-3">gegevens</legend>
-					<section class="col-xl-6">
-						<label for="surname" class="form-label">voornaam <span>*</span></label>
-						<input type="text" class=" form-control" aria-label="voornaam" aria-describedby="addon-wrapping">
-					</section>
-
-					<section class="col-xl-6">
-						<label for="name" class="form-label">achternaam <span>*</span></label>
-						<input type="text" class="form-control" aria-label="achternaam" aria-describedby="addon-wrapping">
-					</section>
-
-					<section class="col-6">
-						<label for="gsm-nummer" class="form-label">gsm-nummer</label>
-						<input type="tel" class="form-control" placeholder="0412 34 56 78" aria-label="gsm-nummer" aria-describedby="addon-wrapping">
-					</section>
-
-					<section class="col-6">
-						<label for="e-mail" class="form-label">e-mail</label>
-						<input type="mail" class="form-control" placeholder="0412 34 56 78" aria-label="e-mail" aria-describedby="addon-wrapping">
-					</section>
-				</fieldset>
+	<aside>
+		<section class="row">
+			<article class="col-10 offset-1 bg-secondary primary-border rounded-5 mb-4 px-4 py-2">
+				<h1>Contact informatie</h1>
 				<hr>
-				<h2>Laat een bericht achter</h2>
-				<fieldset class="input-group mb-4">
-					<!-- <span class="input-group-text"></span> -->
-					<textarea class="form-control" aria-label="With textarea"></textarea>
-				</fieldset>
-				
 
-				<button type="submit" class="btn btn-primary rounded-5">verzenden</button>
-			</form>
+				<p class="small py-2">
+					Ik sta open tot jobaanbiedingen en stages, dus voel je vrij om me te contacteren via telefoon of e-mail indien geïnteresseerd. Ik negeer rekruteringsbedrijven.
+				</p>
+
+				<button class="badge text-bg-dark rounded-pill pink-border">
+					<i class="bi bi-telephone fs-6">	+32 496 08 43 84</i>
+				</button>
+
+				<a class="text-decoration-none" href="mailto:dekortbrian1@gmail.com" target="_blank">
+					<button class="badge rounded-pill pink-border" type="button">
+						<i class="bi bi-envelope fs-6"> dekortbrian1@gmail.com</i>
+					</button>
+				</a>
+
+				<ul class="list-inline my-5">
+					<h1>Social media</h1>
+					<li class="list-inline-item">
+						<a class="text-decoration-none" href="https://github.com/Applejuicelolmc" target="_blank">
+							<button class="badge rounded-pill pink-border" type="button">
+								<i class="bi bi-github fs-6"> Github</i>
+							</button>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a class="text-decoration-none" href="https://www.linkedin.com/in/brian-de-kort-23992817a/" target="_blank">
+							<button class="badge rounded-pill pink-border" type="button">
+								<i class="bi bi-linkedin fs-6"> Linkedin</i>
+							</button>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=32496084384" target="_blank">
+							<button class="badge rounded-pill pink-border" type="button">
+								<i class="bi bi-whatsapp fs-6"> Whatsapp</i>
+							</button>
+						</a>
+					</li>
+				</ul>
+
+				<p class="small mt-4 pink-border rounded-4 px-3 py-2 mt-5">
+					Laat me aub weten waarom je me contacteerd via telefoon of whatsapp, anders ga ik er vanuit dat dit spam is en word je genegeerd en geblokkeerd.
+			</article>
 		</section>
 	</aside>
 
