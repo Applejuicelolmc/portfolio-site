@@ -20,8 +20,7 @@
 	<link rel="icon" href="./assets/images/favicon.gif">
 
 	<!-- preload images, took inspiration from this cool video: https://www.youtube.com/watch?v=-Ln-8QM8KhQ -->
-	<link rel="preload" href="./assets/images/background-image-01.jpg" as="image">
-	<link rel="preload" href="./assets/images/avatar.jpg" as="image">
+	<link rel="preload" href="./assets/images/project-shrimp-bot-01.png" as="image">
 
 	<!-- Custom Javascript -->
 	<script src="./js/script.js" defer></script>
@@ -60,176 +59,105 @@
 		</nav>
 	</header>
 
-	<main class="container">
-		<section class="bg-secondary primary-border rounded-5 m-4 p-4">
-			<h1 class="text-center">personal projects</h1>
-			<article>Here are some of my personal projects that I've been working on. These are mostly worked on during some of the free time I have.</article>
-		</section>
-
-		<section id="projects" class="carousel slide container-fluid bg-secondary primary-border rounded-5 m-4 p-4">
-			<section class="carousel-indicators">
-				<button type="button" data-bs-target="#projects" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-				<button type="button" data-bs-target="#projects" data-bs-slide-to="1" aria-label="Slide 2"></button>
-				<button type="button" data-bs-target="#projects" data-bs-slide-to="2" aria-label="Slide 3"></button>
-				<button type="button" data-bs-target="#projects" data-bs-slide-to="3" aria-label="Slide 4"></button>
-				<button type="button" data-bs-target="#projects" data-bs-slide-to="4" aria-label="Slide 5"></button>
-				<button type="button" data-bs-target="#projects" data-bs-slide-to="5" aria-label="Slide 6"></button>
-			</section>
-
-			<ul class="carousel-inner m-4">
-				<li class="active container-fluid carousel-item card rounded-5 bg-secondary" aria-label="Slide 1">
-					<img src="./assets/images/project-shrimp-bot-01.png" class="card-img-wrapper img-fluid rounded-top-5 z-1 position-relative" alt="shrimp example">
-					<section class="card-body text-center rounded-5 bg-primary info-border card-offset z-1 position-relative card-description-wrapper">
-						<h3 class="card-offset p-2 mx-5 text-center rounded-pill bg-info">
-							Shrimp the Discord bot
-						</h3>
-						<p class="h5 card-text text-start">
-							This is my very first programming project that I started around the end of 2018. Since then I've moved from Javascript to Typescript and had multiple versions with each one improving on the previous one.
-						</p>
-						<a href="discord-bot.html" class="mx-2 text-decoration-none">
-							<button class="btn btn-primary rounded-pill bi bi-file-code" type="button">
-								Details
-							</button>
-						</a>
-						<a href="https://github.com/Applejuicelolmc/shrimp-bot" class="mx-2 text-decoration-none">
-							<button class="btn btn-primary bi bi-github rounded-pill" type="button">
-								Github
-							</button>
-						</a>
-						<a href="https://hub.docker.com/r/applejuicelolmc/shrimp-bot" class="mx-2 text-decoration-none">
-							<button class="btn btn-primary bi bi-lightning-charge-fill rounded-pill" type="button">
-								Dockerhub
-							</button>
-						</a>
-						<span class="card-badges md-12">
-							<a href="https://nodejs.org/en" class="mx-1 text-decoration-none">
-								<button class="badge rounded-pill" type="button">
-									Node JS
-								</button>
-							</a>
-							<a href="https://www.typescriptlang.org/" class="mx-1 text-decoration-none">
-								<button class="badge rounded-pill" type="button">
-									Typescript
-								</button>
-							</a>
-							<a href="https://www.docker.com/" class="mx-1 text-decoration-none">
-								<button class="badge rounded-pill" type="button">
-									Docker
-								</button>
-							</a>
-							<a href="https://discord.js.org/" class="mx-1 text-decoration-none">
-								<button class="badge rounded-pill" type="button">
-									Discord.js
-								</button>
-							</a>
-						</span>
-					</section>
+	<main class="container-fluid row">
+		<section id="carouselExampleControls" class="carousel bg-secondary my-4 p-4 rounded-5 col-md-8 offset-md-2 col-12 offset-0">
+			<h1 class="text-center">Persoonlijke projecten</h1>
+			<p>Hier zijn enkele Persoonlijke projecten waar ik in mijn vrije tijd aan werk.</p>
+			<ul class="carousel-inner p-2">
+				<li class="carousel-item active">
+					<img src="./assets/images/project-shrimp-bot-01.png" class="card-img-wrapper img-fluid rounded-top-4 z-1 position-relative" alt="shrimp example">
+						<section class="card-body text-center rounded-4 bg-primary card-offset z-1 position-relative row">
+							<h3 class="card-offset col-6 offset-3 rounded-pill bg-info">
+								Shrimp the Discord bot
+							</h3>
+							<p class="h5 card-text text-start">
+								This is my very first programming project that I started around the end of 2018. Since then I've moved from Javascript to Typescript and had multiple versions with each one improving on the previous one.
+							</p>
+	
+							<span class="col-12">
+								<a href="discord-bot.html" class="mx-2 text-decoration-none">
+									<button class="btn btn-primary rounded-pill bi bi-file-code" type="button">
+										Details
+									</button>
+								</a>
+								<a href="https://github.com/Applejuicelolmc/shrimp-bot" class="mx-2 text-decoration-none">
+									<button class="btn btn-primary bi bi-github rounded-pill" type="button">
+										Github
+									</button>
+								</a>
+								<a href="https://hub.docker.com/r/applejuicelolmc/shrimp-bot" class="mx-2 text-decoration-none">
+									<button class="btn btn-primary bi bi-lightning-charge-fill rounded-pill" type="button">
+										Dockerhub
+									</button>
+								</a>
+							</span>
+							
+							<span class="card-badges col-12">
+								<a href="https://nodejs.org/en" class="mx-1 text-decoration-none">
+									<button class="badge rounded-pill text-bg-dark" type="button">
+										Node JS
+									</button>
+								</a>
+								<a href="https://www.typescriptlang.org/" class="mx-1 text-decoration-none">
+									<button class="badge rounded-pill text-bg-dark" type="button">
+										Typescript
+									</button>
+								</a>
+								<a href="https://www.docker.com/" class="mx-1 text-decoration-none">
+									<button class="badge rounded-pill text-bg-dark" type="button">
+										Docker
+									</button>
+								</a>
+								<a href="https://discord.js.org/" class="mx-1 text-decoration-none">
+									<button class="badge rounded-pill text-bg-dark" type="button">
+										Discord.js
+									</button>
+								</a>
+							</span>
+						</section>
 				</li>
-				<li class="carousel-item card rounded-5 bg-secondary" aria-label="Slide 2">
-					<img src="assets/images/project-homelab.jpg" class="card-img-wrapper img-fluid rounded-top-5 z-1 position-relative" alt="shrimp example">
-					<section class="card-body text-center rounded-5 bg-primary info-border card-offset z-1 position-relative card-description-wrapper">
-						<h4 class="card-offset p-2 mx-5 text-center rounded-pill bg-info">
-							Juicelab
-						</h4>
-						<p class="h4 card-text text-start">
-							This is a homelab that I've started building around 2020. It's a collection of second hand computers that now I use as servers to learn about networking, virtualization and other IT related topics.
-						</p>
-						<a href="homelab.html" class="mx-2 text-decoration-none">
-							<button class="btn btn-primary rounded-pill bi bi-file-code" type="button">
-								Details
-							</button>
-						</a>
-						<span class="card-badges text-center">
-							<a href="https://www.proxmox.com/en/" class="mx-1 text-decoration-none">
-								<button class="badge rounded-pill" type="button">
-									Proxmox
+				<li class="carousel-item">
+					
+						<img src="./assets/images/background-image-retro.jpg" class="card-img-wrapper img-fluid rounded-top-5 z-1 position-relative" alt="shrimp example">
+						<section class="card-body text-center rounded-5 bg-primary info-border card-offset z-1 position-relative card-description-wrapper">
+							<h4 class="card-offset p-2 mx-5 text-center rounded-pill bg-info">
+								placeholder 3
+							</h4>
+							<p class="h4 card-text text-start">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vero earum a aliquam, tempora facilis repudiandae soluta ad illo nemo mollitia optio fugit enim eos iusto, quisquam fuga est! Voluptas.
+							</p>
+							<a href="project-example.html" class="mx-2 text-decoration-none">
+								<button class="btn btn-primary rounded-pill bi bi-file-code" type="button">
+									Details
 								</button>
 							</a>
-							<a href="https://www.docker.com/" class="mx-1 text-decoration-none">
-								<button class="badge rounded-pill" type="button">
-									Docker
-								</button>
-							</a>
-						</span>
-					</section>
+						</section>
+					
 				</li>
-				<li class="carousel-item card rounded-5 bg-secondary" aria-label="Slide 3">
-					<img src="./assets/images/background-image-retro.jpg" class="card-img-wrapper img-fluid rounded-top-5 z-1 position-relative" alt="shrimp example">
-					<section class="card-body text-center rounded-5 bg-primary info-border card-offset z-1 position-relative card-description-wrapper">
-						<h4 class="card-offset p-2 mx-5 text-center rounded-pill bg-info">
-							placeholder 3
-						</h4>
-						<p class="h4 card-text text-start">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vero earum a aliquam, tempora facilis repudiandae soluta ad illo nemo mollitia optio fugit enim eos iusto, quisquam fuga est! Voluptas.
-						</p>
-						<a href="project-example.html" class="mx-2 text-decoration-none">
-							<button class="btn btn-primary rounded-pill bi bi-file-code" type="button">
-								Details
-							</button>
-						</a>
-					</section>
+				<li class="carousel-item">
+					
 				</li>
-				<li class="carousel-item card rounded-5 bg-secondary" aria-label="Slide 4">
-					<img src="./assets/images/background-image-retro.jpg" class="card-img-wrapper img-fluid rounded-top-5 z-1 position-relative" alt="shrimp example">
-					<section class="card-body text-center rounded-5 bg-primary info-border card-offset z-1 position-relative card-description-wrapper">
-						<h4 class="card-offset p-2 mx-5 text-center rounded-pill bg-info">
-							placeholder 4
-						</h4>
-						<p class="h4 card-text text-start">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vero earum a aliquam, tempora facilis repudiandae soluta ad illo nemo mollitia optio fugit enim eos iusto, quisquam fuga est! Voluptas.
-						</p>
-						<a href="project-example.html" class="mx-2 text-decoration-none">
-							<button class="btn btn-primary rounded-pill bi bi-file-code" type="button">
-								Details
-							</button>
-						</a>
-					</section>
+				<li class="carousel-item">
+					
 				</li>
-				<li class="carousel-item card rounded-5 bg-secondary" aria-label="Slide 5">
-					<img src="./assets/images/background-image-retro.jpg" class="card-img-wrapper img-fluid rounded-top-5 z-1 position-relative" alt="shrimp example">
-					<section class="card-body text-center rounded-5 bg-primary info-border card-offset z-1 position-relative card-description-wrapper">
-						<h4 class="card-offset p-2 mx-5 text-center rounded-pill bg-info">
-							placeholder 5
-						</h4>
-						<p class="h4 card-text text-start">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vero earum a aliquam, tempora facilis repudiandae soluta ad illo nemo mollitia optio fugit enim eos iusto, quisquam fuga est! Voluptas.
-						</p>
-						<a href="project-example.html" class="mx-2 text-decoration-none">
-							<button class="btn btn-primary rounded-pill bi bi-file-code" type="button">
-								Details
-							</button>
-						</a>
-					</section>
+				<li class="carousel-item">
+					
 				</li>
-				
-				<li class="carousel-item card rounded-5 bg-secondary" aria-label="Slide 6">
-					<img src="./assets/images/background-image-retro.jpg" class="card-img-wrapper img-fluid rounded-top-5 z-1 position-relative" alt="shrimp example">
-					<section class="card-body text-center rounded-5 bg-primary info-border card-offset z-1 position-relative card-description-wrapper">
-						<h4 class="card-offset p-2 mx-5 text-center rounded-pill bg-info">
-							placeholder 6
-						</h4>
-						<p class="h4 card-text text-start">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vero earum a aliquam, tempora facilis repudiandae soluta ad illo nemo mollitia optio fugit enim eos iusto, quisquam fuga est! Voluptas.
-						</p>
-						<a href="project-example.html" class="mx-2 text-decoration-none">
-							<button class="btn btn-primary rounded-pill bi bi-file-code" type="button">
-								Details
-							</button>
-						</a>
-					</section>
+				<li class="carousel-item">
+					
 				</li>
 			</ul>
-			<!--  data-bs-slide="prev" -->
-			<button class="carousel-control-prev" type="button" data-bs-target="#projects">
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Previous</span>
 			</button>
-			<!-- data-bs-slide="next" -->
-			<button class="carousel-control-next" type="button" data-bs-target="#projects">
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Next</span>
 			</button>
 		</section>
+
+		
 	</main>
 
 	<footer class="footer container-fluid text-center rounded-pill secondary-border bg-secondary shadow-lg py-2">&copy;
