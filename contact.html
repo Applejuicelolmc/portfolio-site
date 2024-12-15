@@ -62,42 +62,44 @@
 	</header>
 
 	<main class="container-fluid">
-		<section class="row col-md-8 offset-md-2 col-12 offset-0 bg-secondary p-4 rounded-5 my-4">
-			<h1>Contactformulier</h1>
-			<hr>
-
-			<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="">
-				<section class="form-group">
-					<label for="name">Naam:</label>
-					<input type="text" class="form-control" id="name" name="name" required>
+		<section class="row">
+			<article class="col-md-8 offset-md-2 col-12 offset-0 bg-secondary p-4 rounded-5 my-4">
+				<h1>Contactformulier</h1>
+				<hr>
+				<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="">
+					<section class="form-group">
+						<label for="name">Naam:</label>
+						<input type="text" class="form-control" id="name" name="name" required>
+					</section>
+					<section class="form-group">
+						<label for="email">E-mail:</label>
+						<input type="email" class="form-control" id="email" name="email" required>
+					</section>
+					<section class="form-group">
+						<label for="subject">Onderwerp:</label>
+						<input type="text" class="form-control" id="subject" name="subject" required>
+					</section>
+					<section class="form-group">
+						<label for="message">Laat een bericht achter:</label>
+						<textarea class="form-control" rows="10" id="message" name="message" required></textarea>
+					</section>
+					<section class="form-group my-4">
+						<div data-netlify-recaptcha="true"></div>
+					</section>
+					<button type="submit" class="btn btn-primary rounded-pill mb-4">Verzenden</button>
+				</form>
+				<hr>
+				<section id="map">
+					<!-- Map breaks when deleting row?? -->
+					<span id="homeMap" class="row rounded-4 bg-secondary info-border p-4"></span>
 				</section>
-				<section class="form-group">
-					<label for="email">E-mail:</label>
-					<input type="email" class="form-control" id="email" name="email" required>
-				</section>
-				<section class="form-group">
-					<label for="subject">Onderwerp:</label>
-					<input type="text" class="form-control" id="subject" name="subject" required>
-				</section>
-				<section class="form-group">
-					<label for="message">Laat een bericht achter:</label>
-					<textarea class="form-control" rows="10" id="message" name="message" required></textarea>
-				</section>
-				<section class="form-group my-4">
-					<div data-netlify-recaptcha="true"></div>
-				</section>
-				<button type="submit" class="btn btn-primary rounded-pill mb-4">Verzenden</button>
-			</form>
-			<hr>
-			<section id="map">
-				<span id="homeMap" class="row rounded-4 bg-secondary info-border p-4"></span>
-			</section>
+			</article>
 		</section>
 	</main>
 
 	<aside class="container-fluid">
 		<section class="row">
-			<article class="col-md-8 offset-md-2 col-12 offset-0 bg-secondary primary-border rounded-5 mb-4 px-4 py-2">
+			<article class="col-md-8 offset-md-2 col-12 offset-0 bg-secondary primary-border rounded-5 mb-4 px-4 pt-4 pb-2">
 				<h1>Contact informatie</h1>
 				<hr>
 
